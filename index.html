@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to our Solar System</title>
-    <script src="src/aframe.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hello!</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+
+    <style>
+      .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+        font-family: sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <a-scene>
 
-        <a-sphere position="-0.86127 3.11771 7.74012" radius="1.25" color="#EF2D5E" shadow="" material="color: #454545" geometry="" scale="0.1 0.1 0.1"></a-sphere>
-        <a-sphere position="1.92674 3.09665 5.65934" radius="1.25" color="#EF2D5E" shadow="" material="color: #ff5900" geometry="" scale="0.13 0.13 0.13"></a-sphere>
-        <a-sphere position="0 2.88467 4.64868" radius="1.25" color="#EF2D5E" shadow="" material="color: #4262ff" geometry="" scale="0.2 0.2 0.2" src="earth.jpg"></a-sphere>
-        <a-sphere position="-1.01597 2.09323 0.91041" radius="1.25" color="#EF2D5E" shadow="" material="color: #ff0000" geometry="" scale="0.18 0.18 0.18"></a-sphere>
-        <a-sphere position="-9.962 1.22314 14.41728" radius="1.25" color="#EF2D5E" shadow="" material="color: #cdd373" geometry="" scale="1.5 1.5 1.5"></a-sphere>
-        <a-sphere position="8.52584 1.932 5.35274" radius="1.25" color="#EF2D5E" shadow="" material="color: #dea95e" geometry="" scale="1.4 1.4 1.4"></a-sphere>
-        <a-sphere position="-5.37364 1.25 -7.08836" radius="1.25" color="#EF2D5E" shadow="" material="color: #a3f4ff" geometry="" scale="0.75 0.75 0.75"></a-sphere>
-        <a-sphere position="2.45784 1.25 -14.31089" radius="1.25" color="#EF2D5E" shadow="" material="color: #6f8bfb" geometry="" scale="0.75 0.75 0.75"></a-sphere>
+  <body style="margin : 0px; overflow: hidden;">
+    <div class="arjs-loader"><div>Loading, please wait...</div></div>
 
-   
-    	<a-entity camera="" position="0 3.37767 8.21136" wasd-controls="" rotation="-24.75177674965154 20.970255301787976 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
-<a-sky src="4-space.jpg"></a-sky>
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+      <a-nft
+        type="nft"
+        url="arjs-image/christo"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5">
+
+          <a-entity>
+            <a-box position="-100 10 0" src="emoji.jpg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+            <a-box position="10 100 0" src="emoji.jpg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+            <a-box position="100 10 0" src="emoji.jpg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+            <a-box position="-100 10 -150" src="emoji.jpg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+            <a-box position="10 100 -150" src="emoji.jpg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+            <a-box position="100 10 -150" src="emoji.jpg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+          </a-entity>
+
+      </a-nft>
+
+      <a-entity camera></a-entity>
     </a-scene>
+
   </body>
 </html>
