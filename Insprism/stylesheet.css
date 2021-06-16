@@ -1,0 +1,168 @@
+	body {
+height: 915px;
+width: 412px;
+background-color: #323232;
+border-radius: 0px;
+} 			
+
+.title {
+
+height: 96px;
+width: 724px;
+left: 178px;
+top: 1316px;
+border-radius: nullpx;
+
+}
+
+.big {
+font-family: Duru Sans;
+font-size: 144px;
+font-style: normal;
+font-weight: 400;
+line-height: 180px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+
+}
+
+.result {
+    font-family: Duru Sans;
+font-size: 71px;
+font-style: normal;
+font-weight: 400;
+line-height: 89px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+padding-left: 50%;
+}
+
+.square {
+height: 537px; 
+width: 540px;
+
+}
+
+.box {
+width:540px;
+height:537px;
+background-size: cover;
+background-position: center;
+}
+
+h2 {
+font-family: Duru Sans;
+font-size: 71px;
+font-style: normal;
+font-weight: 400;
+line-height: 89px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+
+h1 {
+font-family: Duru Sans;
+font-size: 119px;
+font-style: normal;
+font-weight: 400;
+line-height: 149px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+
+}
+
+.select {
+
+width: 849px;
+height: 172px;
+left: 115px;
+top: 937px;
+
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-color: white;
+align-content: center;
+}
+
+.textbox {
+	font-family: Duru Sans;
+font-size: 119px;
+font-style: normal;
+font-weight: 400;
+line-height: 149px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+.green {
+    height: 128px;
+width: 732px;
+left: 174px;
+top: 2137px;
+border-radius: 0px;
+background-color: #6FC598;
+text-align: center;
+margin: auto;
+padding: 10px;
+}
+
+.buttonfont {
+    font-family: Duru Sans;
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: 90px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+
+}
+
+.red {
+    position: absolute;
+width: 240px;
+height: 129px;
+left: 769px;
+top: 2712px;
+background-color: #F15D5D;
+text-align: center;
+padding-top: 75px;
+}
+
+.blue {
+    position: absolute;
+width: 240px;
+height: 129px;
+left: 80px;
+top: 2712px;
+background-color: #7B8BC5;
+text-align: center;
+padding-top: 75px
+}
+
+.buttonsmol {
+    font-family: Duru Sans;
+    color: white;
+}
+
+.pls {
+    text-align: center;
+}
